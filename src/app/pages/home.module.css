@@ -1,0 +1,406 @@
+.body{
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* 4 */
+    font-feature-settings: normal;
+    background-color: rgb(21 25 51 / var(--tw-bg-opacity, 1));
+}
+.main{
+    display: flex;
+}
+
+.left{
+    width: 50vw;
+    height: 100vh;
+    padding: 5em 3em 3em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+.ghost{
+    width: 50vw;
+    height: 100vh;
+}
+.intro h1{
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+    font-size: 260%;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.intro h3{
+    color: rgb(255 255 255 / var(--tw-text-opacity, 0.9));
+    font-size: 120%;
+    font-weight: 400;
+    margin-top: 0.5em;
+}
+.intro p{
+    font-size: normal;
+    line-height: 1.5;
+    color: rgb(186 186 176 / var(--tw-text-opacity, 0.8));
+    width: 35vw;
+}
+.menu{
+    width: 40%;
+    margin-top: -5em;
+}
+.menu_item{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: small;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    margin-top: 0.5em;
+}
+.menu_item:hover{
+    opacity: 1;
+    transition: 300ms;
+    cursor: pointer;
+}
+.span{
+    width: 40px;
+    height: 0;
+    /* 1 */
+    color: inherit;
+    /* 3 */
+    border: solid 1px white;
+    margin: auto 1.5em auto 0;
+  }
+  .menu_item:hover span{
+      transform: scaleX(1.5);
+      font-size: 70%;
+      margin-left: 1em;
+      padding-right: 3em;
+      opacity: 1;
+      transition: 300ms;
+      cursor: pointer;
+  }
+  .menu_item:hover p{
+      margin-left: 1em;
+      opacity: 1;
+      transition: 300ms;
+      cursor: pointer;
+  }
+  .links{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+.social svg{
+    width: 1.5em;
+    fill: aliceblue;
+    opacity: 0.7;
+}
+.social svg:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    transition: 100ms;
+}
+
+.right{
+    width: 60vw;
+    padding: 0em 0em 2em 2em;
+}
+
+.bg_glow{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(3, 80, 101);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 40vw 40vh rgb(4, 80, 101);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.about{
+    color: white;
+    padding: 4em 0em 2em 0em;
+}
+.about h3{
+    display: none;
+}
+.about p{
+    padding: 1em;
+    font-size: 1rem;
+    line-height: 1.9;
+    opacity: 0.6;
+}
+
+.experience{
+    margin-top: 8em;
+    padding-right: 2em;
+}
+
+.experience h2{
+    padding: 0em 1em 0em 1em;
+    display: none;
+}
+
+.experience_tile{
+    padding: 2em;
+    margin-top: 3em;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(100);
+}
+.experience_tile:hover{
+    box-shadow: inset 0 0 10vw 10vh rgba(255, 255, 255, 0.072);
+    z-index: -10;
+    transition: ease-in-out 300ms;
+}
+.experience_tile:hover h3{
+    color: cyan;
+    opacity: 1;
+    transition: 300ms;
+}
+.experience_tile .period{
+    width: 25%;
+    font-size: smaller;
+    z-index: 10;
+    opacity: 0.4;
+}
+
+.experience_tile .work{
+    width: 73%;
+}
+.work h3{
+    margin: 0;
+    opacity: 0.8;
+}
+.work p{
+    font-size: 0.9em;
+    line-height: 1.5em;
+    opacity: 0.6;
+    margin-top: 8px;
+}
+.experience_tile .work .techstack{
+    display: flex;
+    margin-top: 10px;
+}
+.techstack .stack{
+    padding: 0.2em 1em 0.2em 1em;
+    margin: 0em 0.5em 0em 0em;
+    border-radius: 20px;
+    font-size: small;
+    color: rgb(190, 241, 255);
+    background-color: rgb(3, 80, 101);
+    opacity: 0.8;
+    backdrop-filter: blur(100);
+}
+
+.project{
+    margin-top: 8em;
+    padding-right: 2em;
+}
+.project h2{
+    padding: 0em 1em 0em 1em;
+    display: none;
+}
+
+.project_tile{
+    padding: 2em;
+    margin-top: 3em;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(100);
+}
+.project_tile:hover{
+    box-shadow: inset 0 0 10vw 10vh rgba(255, 255, 255, 0.072);
+    z-index: -10;
+    transition: ease-in-out 300ms;
+}
+.project_tile:hover h3{
+    color: cyan;
+    opacity: 1;
+    transition: 300ms;
+}
+.project_tile .project_image{
+    width: 20%;
+    height: 5em;
+    image-resolution: 4\3;
+    border: solid 1.5px transparent;
+    border-radius: 10px;
+}
+.project_tile:hover .project-image{
+    transition: 900ms;
+    border: solid 1.8px gray;
+    border-radius: 10px;
+}
+
+.project_tile .work{
+    width: 73%;
+}
+.project_tile .work .techstack{
+    display: flex;
+    margin-top: 10px;
+}
+.ex_link{
+    margin-top: 3em;
+}
+.explore_link{
+    margin: 0em 2em 0em 2em;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.explore_link:hover{
+    opacity: 1;
+    border-bottom: solid 2px rgb(48, 140, 138);
+    transition: 500ms;
+}
+
+.footer{
+    margin-top: 8em;
+    padding: 2em;
+    width: 35vw;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.554);
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*
+Responsiveness for medium to small screens
+*/
+@media screen and (max-width: 1024px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+    }
+    .ghost{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .links{
+        margin-top: 2em;
+    }
+    .right{
+        width: 100%;
+    }
+    .experience_tile:hover{
+    box-shadow: inset 0 0 10vw 10vh transparent;
+    transition: ease-in-out 300ms;
+    }
+    .experience_tile:hover h3{
+        color: white;
+    }
+    .project_tile:hover{
+    box-shadow: inset 0 0 10vw 10vh transparent;
+    transition: ease-in-out 300ms;
+    }
+    .project_tile:hover h3{
+        color: white;
+    }
+    .footer{
+        width: 50vw;
+    }
+    .about h3{
+        display: flex;
+        font-size: 1em;
+        padding: 0em 1em 0em 1em;
+    }
+    .experience h2{
+        display: flex;
+        color: white;
+        font-size: 1em;
+        margin-bottom: -25px;
+        padding: 0em 1em 0em 2em;
+    }
+    .project h2{
+        display: flex;
+        color: white;
+        font-size: 1em;
+        margin-bottom: -15px;
+        padding: 0em 1em 0em 2em;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .left{
+        padding: 3em 1em 1em 1em;
+    }
+    .right{
+        padding: 0.5em;
+    }
+    .footer{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .left{
+        width: 100%;
+    }
+    .intro h1{
+        font-size: 220%;
+    }
+    .intro p{
+        width: 80%;
+    }
+    .right{
+        padding: 1em;
+    }
+    .about h3, .about p, .experience h2, .project h2{
+        padding: 0;
+        margin: 0;
+    }
+    .about p{
+        padding: 1em 0em;
+    }
+    .experience_tile{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .experience_tile .work{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .project_tile{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .project_tile .work{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .project_tile .project-image{
+        width: 40%;
+        height: 6em;
+        image-resolution: 4\3;
+        border: solid 1.5px transparent;
+        border-radius: 10px;
+    }
+    .explore_link{
+        margin: 0em 0em 0em 0em;
+        padding: 0;
+    }
+    .footer{
+        width: 85vw;
+    }
+    
+}
