@@ -134,7 +134,7 @@ export default function Landing(props) {
             <div id="project" className={styles.project}>
                 <h2>PROJECTS</h2>
                 <div className={styles.project_tile}>
-                        <img src="" alt="" className={styles.project_image}/>
+                        <div className={styles.project_image}></div>
                     <div className={styles.work}>
                         <h3>TBU</h3>
                         <p>
