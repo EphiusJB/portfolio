@@ -1,5 +1,5 @@
 :root {
-  --background: #ffffff;
+  --background: rgb(21 25 51 / var(--tw-bg-opacity, 1));;
   --foreground: #171717;
 }
 
