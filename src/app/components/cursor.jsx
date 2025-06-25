@@ -37,7 +37,6 @@ export default function Cursor() {
     left: `${position.x}px`,
     top: `${position.y}px`
     }}>
-      Mouse position: X = {position.x}, Y = {position.y}
     </div>
   );
 }
