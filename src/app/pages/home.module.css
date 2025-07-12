@@ -8,6 +8,7 @@
     display: flex;
 }
 
+/* The styling for the left panel component and all its internal components*/
 .left{
     width: 50vw;
     height: 100vh;
@@ -40,6 +41,8 @@
     color: rgb(186 186 176 / var(--tw-text-opacity, 0.8));
     width: 35vw;
 }
+
+/* Left panel menu styles*/
 .menu{
     width: 40%;
     margin-top: -5em;
@@ -83,6 +86,35 @@
       transition: 300ms;
       cursor: pointer;
   }
+  /*Experimental, not yet used*/
+  .menu_item_active{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: small;
+    text-decoration: none;
+    color: white;
+    margin-top: 0.5em;
+    opacity: 1;
+    cursor: pointer;
+      &p{
+        margin-left: 1em;
+        opacity: 1;
+        transition: 300ms;
+        cursor: pointer
+        }
+        &span{
+            transform: scaleX(1.5);
+            font-size: 70%;
+            margin-left: 1em;
+            padding-right: 3em;
+            opacity: 1;
+            transition: 300ms;
+            cursor: pointer;
+        }
+  }
+
+  /* Styles for the links to socials*/
   .links{
     width: 200px;
     display: flex;
@@ -99,11 +131,13 @@
     transition: 100ms;
 }
 
+/*Style for the right panel and all it's components*/
 .right{
     width: 60vw;
     padding: 0em 0em 2em 2em;
 }
 
+/*The background glow that follows the cursor*/
 .bg_glow{
     position: absolute;
     width: 100px;
@@ -117,6 +151,7 @@
     z-index: -1;
 }
 
+/*The Styles for the About component*/
 .about{
     color: white;
     padding: 4em 0em 2em 0em;
@@ -131,6 +166,7 @@
     opacity: 0.6;
 }
 
+/*The styling for the Experience component*/
 .experience{
     margin-top: 8em;
     padding-right: 2em;
@@ -195,6 +231,7 @@
     backdrop-filter: blur(100);
 }
 
+/*The styles for the Projects component*/
 .project{
     margin-top: 8em;
     padding-right: 2em;
@@ -260,6 +297,7 @@
     transition: 500ms;
 }
 
+/* Styles for the footer */
 .footer{
     margin-top: 8em;
     padding: 2em;
@@ -338,6 +376,8 @@ Responsiveness for medium to small screens
     }
 }
 
+
+/* Tablet Responsiveness */
 @media screen and (max-width: 770px) {
     .left{
         padding: 3em 1em 1em 1em;
@@ -350,6 +390,8 @@ Responsiveness for medium to small screens
     }
 }
 
+
+/* Mobile Responsiveness */
 @media screen and (max-width: 640px) {
     .left{
         width: 100%;
